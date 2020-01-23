@@ -19,12 +19,19 @@ Each row acts as its own lottery pool. The count column keeps track of the numbe
 
 For easy cleanup, double-clicking the big red button will clear all entries out of all pools.
 
+<br />
+
 **Feel free to add/remove rows. The code is designed to scale with the number of rows.**
 
 **Do not add/remove columns unless you are prepared to edit the code/formatting.**
 
+<br />
+
 
 ### Detailed Explanation
+
+<br />
+
 #### Count Column
 *TO DO: Enter Explanation*
 #### Selection Column
@@ -34,7 +41,9 @@ For easy cleanup, double-clicking the big red button will clear all entries out 
 #### Entry Pool
 *TO DO: Enter Explanation*
 
+<br />
 
 # Credits
 Created by: ecorn85 aka Qwellfar
+
 Inspired by: Yogscast Stream Team
