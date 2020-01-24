@@ -8,7 +8,7 @@ With streamers taking donations for suggestions/nicknames, the purpose of this p
   4. The ability to expand up/create new worksheets while still maintaining functionality.
   
 ## Implementation
-The workbook uses Excel's Visual Basic functionality to manipulate cells. It also uses Excel's built-in formulas and conditional formatting.
+The workbook uses Excel's Visual Basic API to manipulate cells. It also uses Excel's built-in formulas and conditional formatting.
 
 The code can be accessed by pressing "Alt + F11."
 
@@ -31,16 +31,31 @@ For easy cleanup, double-clicking the big red button will clear all entries out 
 ### Detailed Explanation
 
 <br />
-
+#### Type Columns (if applicable)
+Uses conditional formating rules to edit the cells' styles based upon the text value of the cells. This can be edited through the conditional formatting options.
 #### Count Column
-*TO DO: Enter Explanation*
+Keeps track of the number of filled cells in the pool for that row. (=COUNTA(RANGE))
 #### Selection Column
-*TO DO: Enter Explanation*
+Clicking on the cell will call upon the code to evaluate the current state of the names pool, and return a random, unused entry if one exists.
 #### Selected Column
-*TO DO: Enter Explanation*
-#### Entry Pool
-*TO DO: Enter Explanation*
+When selcting a random entry, the result will be displayed here.
 
+<br />
+
+Possible values:
+- *Empty* = There have been no attempts to select an entry.
+- *Entry* = An entry has been successfully selected, and tagged as used.
+- "No Entry Available" = There are no entries in the pool.
+- "All Entries Used" = All listed entries have been marked as used.
+#### Entry Pool
+This area stores the entries, with a different pool for each row. It is one entry per cell in the row. The code will accomodate for skipping cells, though it is not recommended.
+
+Yellow highlight indicates that the entry has been selected, and will not be chosen again. To reenter an entry, simply remove the highlight.
+
+#### Clear Button
+Double Clicking this cell will remove all entries from all pools, and clear the *Selected* column.
+
+**Calling code cannot be undone with an Undo.**
 <br />
 
 # Credits
