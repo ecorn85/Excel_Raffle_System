@@ -35,6 +35,7 @@ For easy cleanup, double-clicking the big red button will clear all entries out 
 ### Detailed Explanation
 
 <br />
+
 #### Type Columns (if applicable)
 Uses conditional formating rules to edit the cells' styles based upon the text value of the cells. This can be edited through the conditional formatting options.
 #### Count Column
