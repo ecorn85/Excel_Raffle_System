@@ -1,9 +1,9 @@
-# Excel_Lottery_System
+# Excel_Raffle_System
 
 ## Purpose
 With streamers taking donations for suggestions/nicknames, the purpose of this project is to give them a way to:
   1. Keep an organized list of entries.
-  2. Use a randomized lottery selection.
+  2. Use a randomized raffle selection system.
   3. Keep track of what entries have already been used.
   4. The ability to expand up/create new worksheets while still maintaining functionality.
   
@@ -11,6 +11,10 @@ With streamers taking donations for suggestions/nicknames, the purpose of this p
 The workbook uses Excel's Visual Basic API to manipulate cells. It also uses Excel's built-in formulas and conditional formatting.
 
 The code can be accessed by pressing "Alt + F11."
+
+## Requirements
+- Excel 2007 or later
+- Macros must be enabled (usually by a Security Warning propmt from Excel) for the code to run.
 
 ## How it works
 
